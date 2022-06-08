@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="webfonts">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body{
+            background-image: linear-gradient(to right, rgb(241, 243, 241), rgb(168, 158, 197));
+        }
+
+        .conteiner{
+            width: 100%;
+            min-height: 100vh;
+            padding-left: 8%;
+            padding-right: 8%;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .navbar{
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo{
+            width: 90px;
+            cursor: pointer;
+            margin: 30px 0;
+        }
+
+        .menu-icon{
+            width: 25px;
+            cursor: pointer;
+            display: none;
+        }
+
+        h3{
+            flex: 1;
+            text-align: right;
+            font-size: 50px;
+        }
+
+         
+
+        .row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 100px 0;
+        }
+
+        .col-1{
+            flex-basis: 40%;
+            position: relative;
+            margin-left: 50px;
+        }
+
+        h1{
+            flex: 1;
+            text-align: right;
+            color: rgb(56, 54, 49);
+        }
+
+    
+
+        .row .col-1 .titulo{
+            flex: 1;
+            text-align: center;
+            font-size: 40px;
+        }
+
+
+        .col-1 p{
+            font-size: 14px;
+            color: #0c0c0c;
+            font-weight: 100;
+            text-align: justify;
+        }
+
+        
+
+        button{
+            height: 50px;
+            width: 140px;
+            border: 0;
+            padding: 12px 10px;
+            outline: none;
+            color: #fff;
+            background: linear-gradient(to right, #fb5283, #ff3527);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: width 0.5s;
+        }
+
+        button img{
+            width: 30px;
+            display: none;
+        }
+
+        button:hover img{
+            display: block;
+        }
+
+        button:hover{
+            width: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .col-1::after{
+            content: '';
+            width: 10px;
+            height: 100%;
+            background: linear-gradient(#8d0f63, #30041f);
+            position: absolute;
+            left: -40px;
+            top: 8px;
+        }
+
+        .col-2{
+            position: relative;
+            flex-basis: 60%;
+            display: flex;
+            align-items: center;
+        }
+
+        .col-2 .controller{
+            width: 40%;
+            padding-left: 20px;
+        }
+
+        .color-box{
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: linear-gradient(#260650, #a9b9db);
+            border-radius: 20px 0 0 20px;
+            height: 100%;
+            width: 50%;
+            z-index: -1;
+            transform: translateX(150px);
+        }
+
+        .add-btn img{
+            width: 75px;
+            margin-bottom: 5px;
+        }
+
+        .add-btn{
+            text-align: center;
+            color: black;
+            cursor: pointer;
+        }
+
+        .social-links img{
+            height: 13px;
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        .social-links{
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 700px){
+
+            body{
+                background-image: linear-gradient(to right, rgb(187, 219, 231), rgb(180, 163, 241));
+            }
+            nav ul{
+                width: 100%;
+                background: linear-gradient(#ff54a2, #ff575a);
+                position: absolute;
+                top: 75px;
+                right: 0;
+                z-index: 2;
+            }
+
+            nav ul li{
+                display: block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            nav ul li a{
+                color: #fff;
+            }
+
+            .menu-icon{
+                display: block;
+            }
+
+            #menuList{
+                overflow: hidden;
+                transition: 0.5s;
+            }
+
+            .row{
+                flex-direction: column-reverse;
+                margin: 50px 0;
+            }
+
+            .col-2{
+                flex-basis: 100%;
+                margin-bottom: 50px;
+            }
+
+            .col-2 .controller{
+                width: 60%;
+            }
+
+            .color-box{
+                transform: translateX(75px);
+            }
+
+            .col-1{
+                flex-basis: 100%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="conteiner">
+        <div class="navbar">
+            <img src="imagens/logo.png" class="logo">
+            <h3>A Nossa Província</h3>
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h1 class="titulo">Banda Massukos</h1>
+            <p>
+                O Niassa tem o pormenor de aglutinar as principais diferenças danças típicas do país, 
+                já vistas noutros cantos do país", destaca. O festival presta também homenagem à rainha Achivangirai, 
+                heroína da província do Niassa, sepultada no distrito de Majune.
+            </p>
+            <br>
+
+            <p>
+                Os Massukos são uma banda de referência do Niassa, ao norte de Moçambique.
+                Naturais de Lichinga, devem o seu nome a uma fruta silvestre da província que as
+                pessoas comem nas Machambas para matar a fome. O projeto existe desde 1992 e
+                tem apostado na divulgação dos ritmos tradicionais do norte do país e na utilização da
+                música para a promoção de causas sociais e ambientais. Por exemplo, já fizeram
+                campanhas para apelo ao voto em eleições, saneamento básico, HIV-SIDA e lavagem
+                das mãos. O mais recente disco intitula-se Massukos Ku Koma - "Massukos são
+                doces". É o quarto disco da banda, tem 11 temas originais e serve de homenagem ao
+                músico Machunguesy que chegou a fazer parte do projeto nos anos 90, como
+                convidado em tournées internacionais.
+            </p>
+
+            <p>
+                A Província do Niassa está localizada na região norte de Moçambique, e tem uma
+                fronteira com a Tanzânia, com algumas províncias de Nampula e Zambézia, com uma
+                província de Cabo Delgado e esta com o Malawi, com o Lago Niassa, dos Grandes Lagos Africanos.
+            </p>
+                
+            </div>
+            <div class="col-2">
+                <img src="imagens/massukos.png" class="controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="imagens/add.png">
+                    <p><small>Niassa</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <img src="imagens/fb-removebg-preview.png" alt="">
+            <img src="imagens/tw-removebg-preview.png" alt="">
+            <img src="imagens/ig-removebg-preview.png" alt="">
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>
